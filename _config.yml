@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /soccer-players
+exclude: ['README.md']
