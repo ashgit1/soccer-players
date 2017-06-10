@@ -4,3 +4,12 @@ layout: default
 
 <h1>News!</h1>
 <p>Cristiano Roaldo Won his 5th Ballon D'Or!</p>
+
+<ul>
+{% for news in site.posts %}
+	<li>
+		<a href="{{news.source}}" target="_blank">{{news.title}}</a>
+		<p>{{news.meta}}</p>
+	</li>
+{% endfor %}
+</ul>
