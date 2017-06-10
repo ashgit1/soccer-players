@@ -1,0 +1,14 @@
+---
+layout: news
+---
+
+<h1><font color="##3B5998"><b>Recently Discovered New Talents</b></font></h1>
+
+<ul>
+{% for news in site.categories.upcoming limit:2 %}
+	<li>
+		<a href="{{news.source}}" target="_blank">{{news.title}}</a>
+		<p>{{news.meta}}</p>
+	</li>
+{% endfor %}
+</ul>
